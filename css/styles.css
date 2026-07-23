@@ -151,3 +151,110 @@ footer {
   color: var(--accent-color); /* Uses your Deep Teal variable */
 }
 
+/* Expression Page Styling */
+.showcase-section {
+  margin-bottom: 3.5rem;
+}
+
+.section-heading {
+  text-align: center;
+  color: var(--accent-color);
+  margin-bottom: 1.5rem;
+}
+
+.media-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.media-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  flex: 1 1 calc(50% - 1.5rem);
+  min-width: 300px;
+}
+
+.card-links {
+  margin: 1rem 0;
+}
+
+.btn-small {
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+/* 3D Embed Aspect Ratio */
+.embed-wrapper {
+  position: relative;
+  padding-bottom: 60%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.embed-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Banner Cards */
+.banner-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  flex-wrap: wrap;
+}
+
+.highlight-card {
+  border-left: 5px solid var(--accent-color);
+}
+
+/* Local Video Grid */
+.project-group {
+  margin-bottom: 2rem;
+}
+
+.project-group h3 {
+  margin-bottom: 1rem;
+}
+
+.video-pair-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.video-box {
+  flex: 1 1 calc(50% - 1.5rem);
+  min-width: 280px;
+  background-color: var(--card-bg);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px var(--card-shadow);
+}
+
+.video-box video {
+  width: 100%;
+  border-radius: 8px;
+  background: #000;
+}
+
+.video-box h4 {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  text-align: center;
+}
