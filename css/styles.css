@@ -1,1 +1,135 @@
+/* Color Palette Variables */
+:root {
+  --bg-color: #FAF7F2;        /* Soft Cream */
+  --text-color: #3E2B1E;      /* Deep Bronze/Brown */
+  --accent-color: #1D4E56;    /* Deep Teal */
+  --card-bg: #FFFFFF;
+  --card-shadow: rgba(0, 0, 0, 0.05);
+}
+
+/* Reset & Base Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  padding: 2rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header & Hero Section */
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.hero-logo {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+}
+
+/* Pillar Grid (3-Card & Grid Layout) */
+.pillar-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 4px 12px var(--card-shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-icon {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-color);
+}
+
+.card p {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+/* CTA / Secondary Page Styles */
+.cta-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: #FFFFFF;
+  padding: 0.85rem 1.75rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: var(--text-color);
+}
+
+/* Embed Container */
+.embed-container {
+  width: 100%;
+  min-height: 650px;
+  margin-top: 2rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  font-size: 0.85rem;
+  opacity: 0.7;
+}
 
