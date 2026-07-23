@@ -49,10 +49,11 @@ h1 {
   margin-bottom: 2rem;
 }
 
-/* Pillar Grid (3-Card & Grid Layout) */
+/* Pillar Grid Layout */
 .pillar-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 1.5rem;
   margin: 2rem 0;
 }
@@ -69,12 +70,18 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
+  /* Set width so 3 fit on desktop, and the 4th automatically centers below */
+  flex: 1 1 calc(33.333% - 1.5rem);
+  min-width: 280px;
+  max-width: 360px;
 }
 
 .card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
 
 .card-icon {
   width: 80px;
