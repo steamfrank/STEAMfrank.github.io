@@ -258,3 +258,21 @@ footer {
   font-size: 0.95rem;
   text-align: center;
 }
+@page {
+  size: A4;
+  margin: 16mm 16mm 18mm 16mm;
+  
+  @bottom-left {
+    content: "STEAMfrank™ LLC | Confidential Proposal";
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    color: #718096;
+  }
+  
+  @bottom-right {
+    content: "© 2026 STEAMfrank™ LLC. All rights reserved. | Page " counter(page) " of " counter(pages);
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 8pt;
+    color: #718096;
+  }
+}
